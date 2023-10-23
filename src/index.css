@@ -14,8 +14,8 @@ code {
 
 
 body {
-  /* background-size: 400% 400%; */
-  -webkit-animation: Gradient 15s ease infinite;
+/* background-size: 400% 400%; */
+ -webkit-animation: Gradient 15s ease infinite;
 -moz-animation: Gradient 15s ease infinite;
 animation: Gradient 15s ease infinite;
 /*min-height: calc(100vh - 2rem);*/
@@ -27,6 +27,9 @@ overflow: hidden;
 position: relative; 
 }
 
+
+
+/* 
 body::before, 
 body::after {
 content: "";
@@ -117,4 +120,4 @@ to {
 .st12{clip-path:url(#SVGID_14_);}
 .st13{opacity:0.2;}
 .st14{clip-path:url(#SVGID_16_);}
-.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;} */

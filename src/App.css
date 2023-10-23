@@ -8,33 +8,39 @@ body {
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgb(255 255 255),rgb(83 83 83 / 99%));
+  height: 170vh;
+  background: linear-gradient(to bottom, rgb(255 255 255),rgb(135 122 151 / 99%));
 }
 
 header {
   text-align: center;
-  width: 80vw;
-  margin: 2rem auto;
-  padding: 6rem 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 49px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
  h1 {
-  color: #f3f3f3;
+  color: #ffffff;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #494949;
-  text-shadow: 10px 0px #ffffff, 25px 0px 5px #67676787;
+  -webkit-text-stroke-color: #736b89;
+  text-shadow: 10px 0px #cecae3, 25px 0px 5px #b9b1cb87;
   font-size: 60px;
   text-align: center;
   letter-spacing: 1rem;
  }
 
 .inputForm {
-  width: 80vh;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputForm input {
@@ -46,7 +52,7 @@ header {
 
 .inputForm button {
   padding: 1rem 1rem;
-  background: rgba(91, 91, 91, 0.62);
+  background: rgba(144, 128, 160, 0.62);
 
 }
 
@@ -70,12 +76,12 @@ header {
 
 .icons .fa-check {
   padding: 0.487rem .5rem;
-  background: rgb(210, 210, 210);
+  background: rgb(197, 189, 202);
 }
 
 .icons .fa-trash {
   padding: 0.487rem .5rem;
-  background: rgb(233, 233, 233);
+  background: rgb(163 163 163);
 }
 
 .todoText {
@@ -88,4 +94,57 @@ header {
 
 button {
   border: none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 600px) {
+
+  header {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 30px 0;
+   }
+  
+   h1 {
+    font-size: 40px;
+   }
+  
+  .inputForm {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .inputForm input {
+    width: 16rem;
+    height: 2.9rem;
+    padding: 1rem;
+    border: none;
+  }
+  
+  
+  .todoList {
+    width: 100vw;
+    margin: 2rem auto;
+  }
+  
+  .todo {
+    margin: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  
+  .todoText {
+    min-width: 12rem;
+  }
+
 }
